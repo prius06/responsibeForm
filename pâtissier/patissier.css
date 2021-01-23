@@ -1,0 +1,192 @@
+html body {
+	font-family: "Noto Serif JP", 游明朝, "Yu Mincho", 游明朝体, YuMincho, "Sawarabi Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	line-height: 1.8;
+	font-weight: 400;
+	color: rgb(40, 40, 40);
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+header{
+	max-width: 1300px;
+	width: 100%;
+	height: 155px;
+	background: url(./img/mont/header-bg.png) no-repeat center center/cover;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+/* h4{
+	font: 5px; 
+	line-height: 17px;
+} */
+.site-logo{
+	/* display: inline-block; */
+	/* margin: 0 auto; */
+	padding-top: 10px;
+	text-align: center;
+	height: 90%;
+}
+header .sns{
+	position: absolute;
+	display: flex;
+	right: 0;
+	/* display: inline-block; */
+	/* background-color: lightblue; */
+	/* margin-bottom: 15px; */
+	bottom: -5px;
+	margin-right: 20px;
+}
+header li{
+	padding-right: 10px;
+	font-size: 20px;
+}
+header li a{
+	color: #000;
+}
+.main{
+	max-width: 1300px;
+	widows: 100%;
+}
+.menu-container .menu{
+	display: flex;
+	justify-content: center;
+}
+/* .menu-container li{
+
+} */
+.menu-container .menu li a{
+	padding: 10px 40px ;
+	display: block;
+	/* line-height: 1em; */
+	/* border-right: 1px solid; */
+	color: #000;
+	/* background-color: pink; */
+	/* text-align: center; */
+}
+.menu-container li + li {
+	/* display: inline-block; */
+	/* height:20px; */
+	/* margin-top: 10px; */
+	border-left: 1px solid #000;
+	/* background-color: aquamarine; */
+}
+.info {
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.info .text{
+	text-align: left;
+	display: inline-block;
+}
+
+.slider-container { 
+	max-width: 1300px;
+  width: 100%; 
+  height: 580px; 
+  /* overflow: hidden; 	 */
+	/* background: #666; */
+	margin-bottom: 40px;
+} 
+.slider-wrapper { 
+  width: 600%; 
+  position: relative; 
+  left: 0; 
+  will-change: transform; 
+	animation: slider 15s infinite; 
+	display: flex;
+} 
+.slide-item { 
+	max-width: 1300px;
+  width: 100%; 
+  height: 580px; 
+  /* float: left;  */
+  position: relative; 
+  background: #ffffff;
+  /* color: #fff; */
+  /* display: flex; */
+  align-items: flex-start;
+} 
+.slider-container .slide-item .text{
+	max-width: 1300px;
+	width: 100%;
+	height: 110px;
+	text-align: center;
+	color: #000000;
+	font-weight: bolder;
+	margin: 30px;
+	/* background-color: pink; */
+}
+
+@keyframes slider { 
+  0% { transform: translateX(0); } 
+  20% { transform: translateX(-1300px); } 
+  40% { transform: translateX(-2600px); } 
+  60% { transform: translateX(-3900px); } 
+  80% { transform: translateX(-5200px); } 
+  100% { transform: translateX(0); } 
+}
+
+.sec-ttl{
+	font-size: 20px;
+	padding: 60px 30px 0 0;
+}
+.sec-ttl .ttl{
+	color: #ffffff;
+	font-size: small;
+}
+.news-container{
+	/* width: 100%; */
+	background-color: #ddd;
+	height: 540px;
+}
+.section-wrapper{
+	display: block;
+	justify-content: center;
+	max-width:1140px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.news-item{
+	display: flex;
+	/* text-align: center; */
+	margin-left: auto;
+	margin-right: auto;
+}
+.news-tpc{
+	padding: 0px 30px;
+}
+.news-tpc img{
+	max-width:247.5px;
+	width: 100%;
+	height:194.28px;
+}
+.news-event{
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 10px 0px 10px 0;
+}
+.date{
+	margin-top: -15px;
+}
+.news-logo{
+	text-align: right;
+	margin-top: 20px;
+}
+.news-logo .btn{
+	background-color: #000000;
+	color: #ffffff;
+	transition: ease .3s;
+	font-size: 13px;
+	padding: 7px 30px;
+	text-align: center;
+}
+.news-logo .btn:hover{
+	background-color: grey;
+	color: white;
+}
+/* https://www.ms-clair.co.jp/ */
